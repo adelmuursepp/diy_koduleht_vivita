@@ -1,0 +1,2 @@
+class BraceletsController < ApplicationController
+end
