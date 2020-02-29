@@ -1,5 +1,9 @@
 class BraceletsController < ApplicationController
-  def show
+  def index
+    @bracelets = Bracelet.all
+  end
 
+  def show
+    @bracelet = Bracelet.find(params[:id])
   end
 end
