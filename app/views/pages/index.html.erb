@@ -1,0 +1,17 @@
+<% @bracelets.each do |bracelet| %>
+  <h2><%= bracelet.name %></h2>
+  <p><%= bracelet.price %></p>
+  <p><%= bracelet.color %></p>
+<% end %>
+<%= cl_image_tag("red_bracelet",
+      width: 400, height: 300, crop: :fill) %>
+
+<%= cl_image_tag("vera",
+      width: 400, height: 300, crop: :fill) %>
+<br>
+
+
+<% @students.each do |student| %>
+  <%= link_to student.name, students_path(student) %>
+  <p><%= student.age %></p>
+<% end %>
