@@ -16,7 +16,7 @@ puts 'Students finished!'
 
 
 puts 'Creating bracelets...'
-blue = Bracelet.new(name: "Blue bracele", color: "Blue", price: 5)
+blue = Bracelet.new(name: "Blue bracelet", color: "Blue", price: 5)
 blue.save!
 
 red = Bracelet.new(name: "Red bracelet", color: "Red", price: 4)
